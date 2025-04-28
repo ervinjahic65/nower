@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css");
+@import url("./select2.min.css");
 :root{
     --button_padding:11px 23px
 }
@@ -9182,7 +9182,7 @@ body{
     margin-left:var(--awb-margin-left)
 }
 .fusion-audio.fusion-audio.dark-controls .mejs-button>button{
-    background-image:url("https://nower.global/wp-content/plugins/fusion-builder/assets/images/mejs-controls-dark.svg")
+    background-image:url("./mejs-controls-dark.svg")
 }
 .fusion-audio.fusion-audio.dark-controls .awb-playback-rate .playback-rate-button{
     background:0 0;
@@ -30430,7 +30430,6 @@ button.swiper-pagination-bullet{
      bottom: -97px;
      right: 2px;
      border-radius: 0!important;
-     background: transparent url(https://d335luupugsy2.cloudfront.net/cms/files/1446/1588875979/$5u0ndp8vgxo) center center no-repeat;
      z-index: 900;
      box-shadow: none;
      outline: none;
