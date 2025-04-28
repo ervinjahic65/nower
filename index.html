@@ -675,7 +675,7 @@
                                                                                                 </div>
                                                                                                 
                                                                                                 <div class="bricks-form__submit">
-                                                                                                    <button class="bricks--component bricks--component-button rd-button" id="rd-button-lm88yabb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                                                                    <button type="submit" class="bricks--component bricks--component-button rd-button" id="rd-button-lm88yabb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                     Request Contact
                                                                                                     </font></font></button>
                                                                                                 </div>
@@ -684,6 +684,17 @@
                                                                                                     <input type="text" name="sh0uldN07ch4ng3" readonly="" autocomplete="false" tabindex="-1" value="should_not_change">
                                                                                                 </div>
                                                                                             </form>
+                                                                                            <script>
+                                                                                              document.getElementById("conversion-form-nower-formulario-da-home").addEventListener("submit", function (e) {
+                                                                                                  e.preventDefault();
+                                                                                              
+                                                                                                  document.getElementById("conversion-form-nower-formulario-da-home").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+                                                                                              
+                                                                                                  setTimeout(() => {
+                                                                                                      document.getElementById("conversion-form-nower-formulario-da-home").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Thank you for registering with {Company}. Our team will get in touch with you shortly to discuss your options.</p>';
+                                                                                                  }, 2000);
+                                                                                              });
+                                                                                            </script>  
                                                                                         </div>
                                                                                         
                                                                                         <div id="rd-text-lm88yabc" class="bricks--component bricks--component-text rd-text">
