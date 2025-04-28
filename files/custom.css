@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css");
 :root{
     --button_padding:11px 23px
 }
@@ -28895,7 +28896,7 @@ button.swiper-pagination-bullet{
      border-left-style: none;
      border-right-style: none;
 }
- @import url("https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css");
+ 
  .cc-window{
     opacity:1;
     -webkit-transition:opacity 1s ease;
