@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nous contacter - Pathf Share</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script> 
+        <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'brand-primary': '#ff234b', // Example primary color from reference
+                            'brand-secondary': '#ffe100', // Example secondary color
+                            'brand-dark': '#3b3c3c',    // Example dark color
+                            'brand-light': '#ffffff',   // White
+                            'brand-gray': '#969696',    // Gray text
+                            'brand-bg-dark': '#191919', // Dark background from reference
+                            'brand-bg-light': '#f8f8f8', // Light background
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            /* Custom styles if needed, can be minimal with Tailwind */
+            .hero-bg {
+            /* Example gradient or image */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('files/hero-bg-10.png.webp'); /* Adjust path if necessary */
+            background-size: cover;
+            background-position: center;
+            }
+            /* Other custom styles from template can remain if needed */
+        </style>
+    </head>
+    <body class="bg-brand-bg-light font-sans antialiased">
+        <header class="bg-brand-bg-dark text-brand-light shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" aria-label="Pathf Share Logo">
+                            <img class="h-14 w-auto" src="files/logo.png" alt="Logo"> 
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-brand-primary text-sm font-medium rounded-md text-brand-primary bg-transparent hover:bg-brand-primary hover:text-brand-light transition duration-150 ease-in-out">
+                        Nous contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="relative hero-bg text-brand-light py-24 sm:py-32">
+                <div class="absolute inset-0 bg-brand-dark opacity-50"></div>
+                <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Contactez-<span class="text-brand-primary">nous</span></h1>
+                    <p class="mt-6 text-xl max-w-3xl mx-auto">Nous aimerions avoir de vos nouvelles ! Contactez-nous pour toute question ou pour discuter de votre projet.</p>
+                </div>
+            </div>
+            <div class="py-16 lg:py-24 bg-brand-bg-light">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                        <div class="lg:col-span-1 mb-12 lg:mb-0">
+                            <h2 class="text-3xl font-bold text-brand-dark mb-4">Prendre contact</h2>
+                            <p class="text-lg text-gray-600 mb-6">
+                                Utilisez le formulaire pour nous envoyer un message, ou contactez-nous directement par téléphone ou e-mail. Notre équipe est prête à vous aider.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-2">
+                            <h2 class="text-3xl font-bold text-brand-dark mb-6">Envoyez-nous un message</h2>
+                            <form id="form" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Nom complet <span class="text-red-500">*</span></label>
+                                    <div class="mt-1">
+                                        <input type="text" name="name" id="name" autocomplete="name" required class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">E-mail <span class="text-red-500">*</span></label>
+                                    <div class="mt-1">
+                                        <input id="email" name="email" type="email" autocomplete="email" required class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700">Entreprise</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="company" id="company" autocomplete="organization" class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+                                    <div class="mt-1">
+                                        <input type="tel" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700">Sujet / Thème d'intérêt</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message <span class="text-red-500">*</span></label>
+                                    <div class="mt-1">
+                                        <textarea id="message" name="message" rows="4" required class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border border-gray-300 rounded-md"></textarea>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-brand-light bg-brand-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition duration-150 ease-in-out">
+                                    Envoyer le message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-brand-bg-dark text-brand-light">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <nav class="flex flex-wrap justify-center -mx-5 -my-2 mb-6" aria-label="Footer">
+                    <div class="px-5 py-2">
+                        <a href="privacy.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">Politique de confidentialité</a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="terms.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">Termes et Conditions</a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="about.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">À propos</a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="contact.html" class="text-base text-brand-primary hover:text-brand-light transition duration-150 ease-in-out" aria-current="page">Nous contacter</a>
+                    </div>
+                </nav>
+                <div class="mb-6 text-center text-brand-gray text-sm">
+                    <h3 class="text-lg font-semibold text-brand-light mb-2">Notre Bureau</h3>
+                    <p>SIRET - 853 978 006 00015</p>
+                    <p>Adresse - 9ème étage, Immeuble Haussmann, Boulevard Haussmann, 75008 Paris, France</p>
+                    <p>Téléphone - +33 1 42 68 53 00</p>
+                </div>
+                <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-center">
+                    <p class="text-base text-brand-gray text-center">&copy; Copyright 2025 | Pathf Share. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.getElementById("form").addEventListener("submit", function (e) {
+                e.preventDefault();
+            
+                document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+            
+                setTimeout(() => {
+                    document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Merci de vous être inscrit auprès de Pathf Share. Notre équipe vous contactera sous peu pour discuter de vos options.</p>';
+                }, 2000);
+            });
+          </script>  
+    </body>
+</html>
