@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회사 소개 - Pathf Share</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16"> 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#ff234b',
+                        'brand-secondary': '#ffe100',
+                        'brand-dark': '#3b3c3c',
+                        'brand-light': '#ffffff',
+                        'brand-gray': '#969696',
+                        'brand-bg-dark': '#191919',
+                        'brand-bg-light': '#f8f8f8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('files/hero-bg-10.png.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-bg-texture {
+            background-image: url('files/bg-texture-branco.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-bg-pattern {
+            background-image: url('files/hero-bg-5.svg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg-light font-sans antialiased">
+
+    <header class="bg-brand-bg-dark text-brand-light shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html" aria-label="Pathf Share Logo">
+                        <img class="h-14 w-auto" src="files/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-brand-primary text-sm font-medium rounded-md text-brand-primary bg-transparent hover:bg-brand-primary hover:text-brand-light transition duration-150 ease-in-out">
+                        문의하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="relative hero-bg text-brand-light py-24 sm:py-32">
+            <div class="absolute inset-0 bg-brand-dark opacity-50"></div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Pathf Share <span class="text-brand-primary">소개</span></h1>
+                <p class="mt-6 text-xl max-w-3xl mx-auto">전 세계 시장 선도 기업을 위한 혁신 주도 및 성과 가속화</p>
+            </div>
+        </div>
+
+        <div class="py-16 lg:py-24 bg-brand-bg-light">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="prose prose-lg lg:prose-xl max-w-none text-gray-700">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6">여정: 혁신의 전통</h2>
+
+                    <p>Pathf Share에 오신 것을 환영합니다. Pathf Share는 10년 이상의 헌신으로 사람과 비즈니스를 혁신해 온 글로벌 생태계입니다. 우리의 여정은 조직이 단순히 변화를 관리하는 것이 아니라 주도하도록 지원한다는 명확한 비전으로 시작되었습니다. 10년 이상의 역사를 지닌 우리는 시장 선도 기업과 지속적으로 협력하며 잠재력을 최대한 발휘하고 지속 가능한 성장을 달성할 수 있도록 도왔습니다. 우리는 단순한 컨설턴트가 아니라 진화를 촉진하는 촉매 역할을 하며, 우리가 서비스를 제공하는 모든 고객의 성공과 회복력에 깊이 관여합니다.</p>
+
+                    <p>Pathf Share의 핵심에는 독특한 비즈니스 컨설팅 접근 방식이 있습니다. 우리는 진정한 혁신은 일시적인 해결책이 아니라 지속 가능한 역량 구축에 있다고 믿습니다. 우리의 방법론은 조직이 지속적으로 도전을 극복할 수 있도록 준비하여 주요 시장 플레이어의 성과를 가속화하도록 설계되었습니다. 우리는 단순히 솔루션을 제공하는 것이 아니라 고객과 함께 공동으로 솔루션을 창출하며, 지식이 공유되고 역량이 이전되는 협업 환경을 조성합니다. 이러한 독창적인 컨설팅 방식은 참여 기간을 넘어 지속적인 개선 문화와 적응력을 고객 조직에 내재화합니다.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">Pathf Share 생태계: 컨설팅을 넘어</h3>
+                    <p>우리의 강점은 종합적인 생태계에 있습니다. Pathf Share 비즈니스 컨설팅은 성과 가속의 원동력이지만, 우리의 범위는 그 이상으로 확장됩니다. K21 Education과의 파트너십을 통해 세계적 수준의 기업 교육 프로그램을 제공합니다. 이러한 시너지는 K21의 뛰어난 교수법과 풍부한 경험을 조직에 직접 제공합니다. 우리의 교육은 이론뿐만 아니라 현대 비즈니스 현장의 과제를 매일 체험하는 컨설턴트들이 진행합니다. 역동적인 워크숍, 통찰력 있는 강의, 공인 교육 과정, 고유한 가속 학습 프로그램(EVDnC), 맞춤형 멘토링을 통해 팀에게 실전에서 필요한 기술과 전략적 사고를 갖추게 합니다.</p>
+
+                    <p>지속 가능한 성공은 개인 역량 개발 이상의 것을 요구한다는 것을 이해합니다. 우리의 <strong class="text-brand-primary">팀 개발</strong> 서비스는 팀의 성과와 업무 실행력을 극대화하는 데 중점을 둡니다. 효과적인 업무 모델을 설계하고, 측정 가능한 결과 중심 문화를 심어 혁신이 가설 검증을 통해 꽃피우는 환경을 조성합니다. 낭비를 줄이고 가치 제공을 예측하며 예측 가능성을 높여 팀이 더 효과적이고 협업하며 회복력 있게 만들어 줍니다. 이는 바로 비즈니스 민첩성과 수익성에 직접 기여합니다.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">접근 방식: 민첩하고 협업적이며 결과 중심</h3>
+                    <p>Pathf Share를 차별화하는 것은 우리의 작업 모델입니다. 우리는 짧은 납기 사이클과 강도 높은 협업을 특징으로 하는 컨설팅 접근 방식을 채택합니다. 이 애자일 방법론은 빠른 변화 창출을 가능하게 하며, 솔루션이 적합하고 효율적으로 구현되도록 보장합니다. 우리는 보고서 중심의 장기 계약 대신 반복적인 진행 방식을 통해 각 단계마다 실제 가치를 제공합니다. 이 방법론은 조직 전체에 견고한 기반을 제공하며, 고위 전략과 팀의 일상 업무를 연결하여 일관성과 정렬을 보장합니다.</p>
+
+                    <p>성과 가속화는 단순한 서비스가 아닌 우리의 핵심 철학입니다. 우리는 시장 변화에 신속히 적응하고 단기간에 전략을 효과적으로 실행하는 조직의 역량을 확장하는 데 중점을 둡니다. 우리의 접근 방식은 고객에게 즉각적인 가치와 가시적인 성과를 제공합니다. 이를 위해 전략, 조정, 운영 수준에서 팀과 긴밀히 협력합니다. 주요 활동에는 기회 식별을 위한 사업 부문 진단, 고성능 운영 모델 구현, 성과 기반 포트폴리오 관리 프레임워크 구축, OKR(목표 및 핵심 결과) 도구를 활용한 효과적인 성과 관리가 포함됩니다. 이러한 총체적 접근은 시스템적이고 지속 가능한 개선을 보장합니다.</p>
+
+                    <p>또한 우리는 <strong class="text-brand-primary">조직 혁신</strong>을 전문으로 합니다. 우리는 조직이 대규모로 지속적인 성과를 제공할 수 있도록 진화를 이끌며, 시스템적 영향을 창출하고 모든 영역에서 성과 가속화를 추진합니다. 이를 위해 전략적 조직 설계, OKR 통합 비즈니스 관리 프로세스, 조직 변화 관리를 수행합니다. 우리는 혁신이 여정임을 이해하며, 변화가 원활하게 채택되고 지속적인 긍정적 결과를 이끌도록 매 단계에서 파트너로 함께합니다.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">성공을 위한 파트너십</h3>
+                    <p>우리는 주요 시장 플레이어가 성과를 극대화할 수 있도록 도왔던 검증된 실적을 보유하고 있으며, 이러한 성공의 전통을 귀사에도 전하고자 합니다. 고객은 우리의 전문성뿐 아니라 파트너십에 대한 헌신을 선택합니다. 우리는 신뢰 받는 조언자이자 협력자로서 귀사의 팀에 완벽히 통합됩니다. 우리의 성공은 귀사의 성공으로 측정되며, 의미 있고 측정 가능한 결과 달성에 초점을 맞춥니다.</p>
+
+                    <p>특정 팀 역량 강화를 원하시든, 핵심 프로젝트 전달 가속화를 원하시든, 대규모 조직 혁신을 추진하시든, Pathf Share는 귀하의 목표 달성을 지원할 경험, 방법론, 열정을 보유하고 있습니다. 컨설팅, 교육, 협업 작업을 독특하게 결합하여 조직의 성과와 회복력을 새로운 차원으로 끌어올리는 여정에 함께하시기 바랍니다.</p>
+
+                </div>
+
+                <div class="mt-16 lg:mt-24 text-center">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">진화를 가속화할 준비가 되셨나요?</h2>
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Pathf Share가 귀사의 지속적인 성과를 주도할 최적화된 솔루션을 어떻게 제공할 수 있는지 논의해 보겠습니다.</p>
+                    <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-brand-light bg-brand-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition duration-150 ease-in-out">
+                        저희와 대화해 보세요!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-bg-dark text-brand-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <nav class="flex flex-wrap justify-center -mx-5 -my-2 mb-6" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="privacy.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">개인정보 처리방침</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="terms.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">이용약관</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="about.html" class="text-base text-brand-primary hover:text-brand-light transition duration-150 ease-in-out">회사 소개</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="contact.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">문의하기</a>
+                </div>
+            </nav>
+
+            <div class="mb-6 text-center text-brand-gray text-sm">
+                <h3 class="text-lg font-semibold text-brand-light mb-2">저희 사무실</h3>
+                <p>사업자등록번호 – 105-86-73452</p>
+                <p>주소 – 서울특별시 중구 한강대로 416, 서울스퀘어 10층, 우편번호 04637, South Korea</p>
+                <p>전화 – +82-2-8802-0751</p>
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-center">
+                <p class="text-base text-brand-gray text-center">© 2025 Pathf Share. 판권 소유.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

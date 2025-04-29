@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>문의하기 - Pathf Share</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script> 
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#ff234b',
+                        'brand-secondary': '#ffe100',
+                        'brand-dark': '#3b3c3c',
+                        'brand-light': '#ffffff',
+                        'brand-gray': '#969696',
+                        'brand-bg-dark': '#191919',
+                        'brand-bg-light': '#f8f8f8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('files/hero-bg-10.png.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg-light font-sans antialiased">
+    <header class="bg-brand-bg-dark text-brand-light shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html" aria-label="Pathf Share 로고">
+                        <img class="h-14 w-auto" src="files/logo.png" alt="Logo"> 
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-brand-primary text-sm font-medium rounded-md text-brand-primary bg-transparent hover:bg-brand-primary hover:text-brand-light transition duration-150 ease-in-out">
+                        문의하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="relative hero-bg text-brand-light py-24 sm:py-32">
+            <div class="absolute inset-0 bg-brand-dark opacity-50"></div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">문의하기 <span class="text-brand-primary">Us</span></h1>
+                <p class="mt-6 text-xl max-w-3xl mx-auto">질문이나 프로젝트 논의를 원하시면 언제든 연락해 주세요!</p>
+            </div>
+        </div>
+
+        <div class="py-16 lg:py-24 bg-brand-bg-light">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div class="lg:col-span-1 mb-12 lg:mb-0">
+                        <h2 class="text-3xl font-bold text-brand-dark mb-4">문의 안내</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            아래 양식을 통해 메시지를 보내시거나, 전화 및 이메일로 직접 연락하세요. 저희 팀이 도와드립니다.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <h2 class="text-3xl font-bold text-brand-dark mb-6">메시지 보내기</h2>
+                        <form id="form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">이름 <span class="text-red-500">*</span></label>
+                                <div class="mt-1">
+                                    <input type="text" name="name" id="name" autocomplete="name" required
+                                           class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md"
+                                           placeholder="이름">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">이메일 <span class="text-red-500">*</span></label>
+                                <div class="mt-1">
+                                    <input id="email" name="email" type="email" autocomplete="email" required
+                                           class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md"
+                                           placeholder="이메일">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700">회사</label>
+                                <div class="mt-1">
+                                    <input type="text" name="company" id="company" autocomplete="organization"
+                                           class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md"
+                                           placeholder="회사명">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">전화번호</label>
+                                <div class="mt-1">
+                                    <input type="tel" name="phone" id="phone" autocomplete="tel"
+                                           class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md"
+                                           placeholder="전화번호">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700">제목 / 관심 주제</label>
+                                <div class="mt-1">
+                                    <input type="text" name="subject" id="subject"
+                                           class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border-gray-300 rounded-md"
+                                           placeholder="제목">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">메시지 <span class="text-red-500">*</span></label>
+                                <div class="mt-1">
+                                    <textarea id="message" name="message" rows="4" required
+                                              class="py-3 px-4 block w-full shadow-sm focus:ring-brand-primary focus:border-brand-primary border border-gray-300 rounded-md"
+                                              placeholder="메시지를 입력하세요"></textarea>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <button type="submit"
+                                        class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-brand-light bg-brand-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition duration-150 ease-in-out">
+                                    메시지 보내기
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-bg-dark text-brand-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <nav class="flex flex-wrap justify-center -mx-5 -my-2 mb-6" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="privacy.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">개인정보 처리방침</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="terms.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">이용약관</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="about.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">회사 소개</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="contact.html" class="text-base text-brand-primary hover:text-brand-light transition duration-150 ease-in-out" aria-current="page">문의하기</a>
+                </div>
+            </nav>
+            <div class="mb-6 text-center text-brand-gray text-sm">
+                <h3 class="text-lg font-semibold text-brand-light mb-2">저희 사무실</h3>
+                <p>사업자등록번호 – 105-86-73452</p>
+                <p>주소 – 서울특별시 중구 한강대로 416, 서울스퀘어 10층, 우편번호 04637, South Korea</p>
+                <p>전화 – +82-2-8802-0751</p>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-center">
+                <p class="text-base text-brand-gray text-center">© 2025 Pathf Share. 판권 소유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            this.innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+            setTimeout(() => {
+                this.innerHTML = '<p style="font-size:18px;color:#000;font-weight:700;text-align:center;">Pathf Share에 등록해 주셔서 감사합니다. 곧 팀이 연락드려 귀하의 선택사항을 논의하겠습니다.</p>';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
