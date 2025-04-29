@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi Siamo - Pathf Share</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#ff234b', // Example primary color from reference
+                        'brand-secondary': '#ffe100', // Example secondary color
+                        'brand-dark': '#3b3c3c',    // Example dark color
+                        'brand-light': '#ffffff',   // White
+                        'brand-gray': '#969696',    // Gray text
+                        'brand-bg-dark': '#191919', // Dark background from reference
+                        'brand-bg-light': '#f8f8f8', // Light background
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles if needed, can be minimal with Tailwind */
+        .hero-bg {
+             /* Example gradient or image */
+             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('files/hero-bg-10.png.webp'); /* Adjust path if necessary */
+             background-size: cover;
+             background-position: center;
+        }
+        .section-bg-texture {
+            background-image: url('files/bg-texture-branco.webp'); /* Adjust path if necessary */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-bg-pattern {
+            background-image: url('files/hero-bg-5.svg'); /* Adjust path if necessary */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg-light font-sans antialiased">
+
+    <header class="bg-brand-bg-dark text-brand-light shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html" aria-label="Logo Pathf Share">
+                        <img class="h-14 w-auto" src="files/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-brand-primary text-sm font-medium rounded-md text-brand-primary bg-transparent hover:bg-brand-primary hover:text-brand-light transition duration-150 ease-in-out">
+                        Contattaci
+                    </a>
+                </div>
+            </div>
+        </div>
+        </header>
+
+    <main>
+        <div class="relative hero-bg text-brand-light py-24 sm:py-32">
+            <div class="absolute inset-0 bg-brand-dark opacity-50"></div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Chi è <span class="text-brand-primary">Pathf Share</span></h1>
+                <p class="mt-6 text-xl max-w-3xl mx-auto">Guidiamo la Trasformazione e Acceleriamo i Risultati per i Leader di Mercato in tutto il Mondo.</p>
+            </div>
+        </div>
+
+        <div class="py-16 lg:py-24 bg-brand-bg-light">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="prose prose-lg lg:prose-xl max-w-none text-gray-700">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Il Nostro Percorso: Un'Eredità di Trasformazione</h2>
+
+                    <p>Benvenuti in Pathf Share, un ecosistema globale costruito su oltre un decennio di dedizione alla trasformazione di persone e aziende. Il nostro viaggio è iniziato con una visione chiara: potenziare le organizzazioni non solo per navigare il cambiamento, ma per guidarlo. Con oltre 10 anni di storia, abbiamo costantemente collaborato con aziende leader di mercato, aiutandole a sbloccare il loro potenziale e a raggiungere una crescita sostenibile in un panorama in continua evoluzione. Siamo orgogliosi di essere più che semplici consulenti; siamo catalizzatori di evoluzione, profondamente investiti nel successo e nella resilienza di ogni cliente che serviamo.</p>
+
+                    <p>Al centro di Pathf Share c'è un approccio unico alla consulenza aziendale. Crediamo che la vera trasformazione non riguardi soluzioni temporanee; riguarda la costruzione di capacità durature. La nostra metodologia è progettata per accelerare i risultati per i principali attori del mercato preparando le loro organizzazioni a superare continuamente le sfide. Non offriamo solo soluzioni; le co-creiamo insieme ai nostri clienti, promuovendo un ambiente collaborativo in cui la conoscenza viene condivisa e le capacità vengono trasferite. Questo modo unico di fare consulenza assicura che l'impatto del nostro lavoro si estenda ben oltre il periodo dell'incarico, radicando una cultura di miglioramento continuo e adattabilità nel DNA del cliente.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">L'Ecosistema Pathf Share: Più che Consulenza</h3>
+                    <p>La nostra forza risiede nel nostro ecosistema completo. Pathf Share Business Consultancy è il motore che guida risultati accelerati, ma la nostra portata si estende ulteriormente. In collaborazione con <strong class="text-brand-primary">K21 Education</strong>, offriamo programmi di Formazione Aziendale di livello mondiale. Questa sinergia ci permette di portare la profondità dei rinomati metodi didattici e della vasta esperienza di K21 direttamente nelle organizzazioni. La nostra formazione non è solo teorica; è fornita da consulenti che vivono e respirano quotidianamente le sfide del mondo aziendale moderno. Attraverso workshop dinamici, conferenze illuminanti, corsi di formazione certificati, i nostri esclusivi programmi di Apprendimento Accelerato (EVDnC) e mentoring personalizzato, dotiamo i team delle competenze pratiche e della mentalità strategica necessarie per eccellere.</p>
+
+                    <p>Comprendiamo che il successo sostenibile richiede più del semplice sviluppo delle competenze individuali; richiede team ad alte prestazioni allineati con gli obiettivi organizzativi. I nostri servizi di <strong class="text-brand-primary">Sviluppo del Team</strong> si concentrano sul potenziamento delle prestazioni e delle capacità di consegna dei vostri team. Lavoriamo con voi per progettare modelli di lavoro efficaci, instillare un focus sui risultati tangibili e coltivare un ambiente in cui l'innovazione prospera attraverso la validazione delle ipotesi. Riducendo gli sprechi, anticipando la consegna di valore e migliorando la prevedibilità, aiutiamo i vostri team a diventare più efficaci, collaborativi e resilienti, contribuendo direttamente ai profitti e all'agilità aziendale complessiva.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">Il Nostro Approccio: Agile, Collaborativo, Orientato ai Risultati</h3>
+
+                    <p>Ciò che distingue veramente Pathf Share è il nostro modello operativo. Sosteniamo un approccio consulenziale caratterizzato da <strong class="text-brand-primary">cicli di consegna brevi e intenso lavoro collaborativo</strong>. Questa metodologia agile ci consente di creare cambiamenti di impatto più velocemente, garantendo che le soluzioni siano pertinenti, testate e implementate in modo efficiente. Ci allontaniamo da incarichi lunghi e pesanti in termini di reportistica verso progressi iterativi, fornendo valore tangibile ad ogni passo. La nostra metodologia fornisce una solida base che abbraccia l'intera organizzazione, collegando la strategia di alto livello con le realtà pratiche delle attività quotidiane del team. Ciò garantisce allineamento e coerenza a tutti i livelli, dalla sala riunioni alla prima linea operativa.</p>
+
+                    <p>L'accelerazione dei risultati non è solo un servizio; è la nostra filosofia fondamentale. Ci concentriamo sull'espansione della capacità della vostra azienda di adattarsi rapidamente ai cambiamenti del mercato eseguendo al contempo la strategia in modo efficace in cicli brevi e mirati. Il nostro approccio enfatizza la generazione di valore immediato per i vostri clienti e risultati tangibili per la vostra azienda. Ciò comporta lavorare a stretto contatto con i vostri team a livello strategico, di coordinamento e operativo. Le attività chiave includono Diagnosi complete delle Business Unit per identificare opportunità, implementazione di modelli di Operatività ad Alte Prestazioni, istituzione di framework di Gestione del Portfolio Basata sui Risultati e radicamento di pratiche efficaci di Gestione dei Risultati utilizzando strumenti come gli OKR (Objectives and Key Results). Questo approccio olistico garantisce che i miglioramenti siano sistemici e sostenibili.</p>
+
+                    <p>Inoltre, siamo specializzati nella <strong class="text-brand-primary">Trasformazione Organizzativa</strong>. Guidiamo l'evoluzione della vostra organizzazione per favorire la consegna continua di risultati su larga scala. Il nostro obiettivo è creare un impatto sistemico, portando i benefici dei risultati accelerati in modo coerente in tutte le aree. Raggiungiamo questo obiettivo attraverso il design organizzativo strategico, affinando i processi di gestione aziendale (spesso integrando gli OKR per chiarezza e allineamento) e gestendo sapientemente il cambiamento organizzativo. Comprendiamo che la trasformazione è un viaggio e collaboriamo con voi in ogni fase del percorso, garantendo che i cambiamenti vengano adottati senza intoppi e portino a risultati positivi duraturi.</p>
+
+                    <h3 class="text-2xl font-semibold text-brand-dark mt-12 mb-4">Collaborare per il Successo</h3>
+
+                    <p>Abbiamo una comprovata esperienza nell'aiutare i principali attori del mercato a potenziare i loro risultati e siamo ansiosi di portare questa eredità di successo anche alla vostra azienda. I nostri clienti ci scelgono non solo per la nostra competenza, ma per il nostro impegno alla partnership. Ci integriamo perfettamente con i vostri team, agendo come consulenti e collaboratori fidati. Misuriamo il nostro successo dal vostro successo, concentrandoci sul raggiungimento di risultati significativi e misurabili che portano avanti la vostra attività.</p>
+
+                    <p>Sia che stiate cercando di migliorare le capacità specifiche del team, accelerare la consegna di progetti chiave o intraprendere una trasformazione organizzativa su larga scala, Pathf Share ha l'esperienza, la metodologia e la passione per aiutarvi a raggiungere i vostri obiettivi. Vi invitiamo a esplorare come la nostra miscela unica di consulenza, formazione e lavoro collaborativo possa sbloccare nuovi livelli di prestazioni e resilienza per la vostra organizzazione. Intraprendiamo insieme questo viaggio di evoluzione e costruiamo un futuro in cui la vostra azienda sia costantemente leader di mercato.</p>
+
+                </div>
+
+                 <div class="mt-16 lg:mt-24 text-center">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">Pronto ad Accelerare la Tua Evoluzione?</h2>
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Discutiamo di come Pathf Share può personalizzare soluzioni per generare risultati continui per la tua attività.</p>
+                    <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-brand-light bg-brand-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition duration-150 ease-in-out">
+                        Vieni a Parlare con Noi!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-bg-dark text-brand-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <nav class="flex flex-wrap justify-center -mx-5 -my-2 mb-6" aria-label="Piè di pagina">
+                 <div class="px-5 py-2">
+                    <a href="privacy.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">Informativa sulla Privacy</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="terms.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">Termini e Condizioni</a>
+                </div>
+                 <div class="px-5 py-2">
+                    <a href="about.html" class="text-base text-brand-primary hover:text-brand-light transition duration-150 ease-in-out">Chi Siamo</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="contact.html" class="text-base text-brand-gray hover:text-brand-light transition duration-150 ease-in-out">Contattaci</a>
+                </div>
+            </nav>
+
+             <div class="mb-6 text-center text-brand-gray text-sm">
+                <h3 class="text-lg font-semibold text-brand-light mb-2">Il Nostro Ufficio</h3>
+                <p>P.IVA - IT009437662</p>
+                <p>Indirizzo - Via Esempio 33, Piano 9, 20121 Milano (MI), Italia</p>
+                <p>Telefono - +39 02 0091 8394</p>
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-center">
+                <p class="text-base text-brand-gray text-center">&copy; Copyright 2025 | Pathf Share. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
